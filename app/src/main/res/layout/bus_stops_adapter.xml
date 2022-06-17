@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginTop="8dp"
+    android:elevation="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:paddingVertical="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/stopsCount"
+            android:layout_width="100dp"
+            android:layout_height="24dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bg_rectangele"
+            android:gravity="center"
+            android:text="Stops: 1"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/firstStops"
+            android:layout_width="120dp"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/stopsCount"
+            android:layout_centerInParent="true"
+            android:text="@string/first_stop"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/busNoTv"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="14254"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/busNoIv"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/busNoTv"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/firstStops"
+            android:src="@drawable/bus_logo"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/lastStops"
+            android:layout_width="120dp"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/stopsCount"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="@string/last_stop"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
